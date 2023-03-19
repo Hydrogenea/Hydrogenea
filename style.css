@@ -24,8 +24,8 @@ img {
 .text-center {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  margin-top: -800px;
+  margin-top: -200px;
   color: white;
   position: center;
-  font-size: 52px;
+  font-size: 15px;
 }
