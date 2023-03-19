@@ -1,6 +1,7 @@
+/* Default styles for desktop view */
 body {
-	background-image: url(background.png);
-	background-size: cover;
+  background-image: url(background.png);
+  background-size: cover;
 }
 
 .container {
@@ -11,9 +12,10 @@ body {
 }
 
 img {
-	max-width: 50%;
-	max-height: 50%;
+  max-width: 50%;
+  max-height: 50%;
 }
+
 @font-face {
   font-family: 'Open Sans';
   src: url('fonts/OpenSans-Regular.ttf');
@@ -26,6 +28,16 @@ img {
   text-align: center;
   margin-top: -250px;
   color: white;
-  position: center;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+/* Styles for mobile view */
+@media only screen and (max-width: 600px) {
+  img {
+    max-width: 80%;
+    max-height: auto;
+  }
+  .text-center {
+    font-size: 14px;
+  }
 }
