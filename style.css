@@ -29,3 +29,11 @@ img {
   position: center;
   font-size: 16px;
 }
+@media only screen and (max-width: 600px) {
+  .text {
+    font-size: 8px;
+  }
+  .image {
+    width: 80%;
+  }
+}
