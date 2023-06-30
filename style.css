@@ -1,7 +1,13 @@
 /* Styles for desktop and larger screens */
+html, body {
+  height: 100%; /* Ensure the parent elements have a height of 100% */
+}
 
 body {
   background-image: url(background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .container {
