@@ -31,13 +31,13 @@ img {
 }
 
 .team-info {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  display: flex;
+  justify-content: center;
   padding: 20px;
 }
 
 .team-member {
+  flex: 1;
   text-align: center;
 }
 
@@ -49,9 +49,10 @@ img {
   margin-bottom: 10px;
 }
 
-h1, p {
-  color: white;
+h3, p {
+  color: #fff;
   margin: 0;
+}
 }
 
 h1 {
