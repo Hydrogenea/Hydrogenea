@@ -58,7 +58,8 @@ p {
 
 @media (max-width: 767px) {
   .container {
-    height: 30vh;
+    height: 60vh;
+    padding-bottom: 40px;
   }
 
   img {
