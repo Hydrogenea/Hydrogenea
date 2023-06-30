@@ -2,9 +2,6 @@
 
 body {
   background-image: url(background.png);
-  background-size: cover; /* Stretch the background to cover the display size */
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .container {
