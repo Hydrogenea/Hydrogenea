@@ -38,6 +38,7 @@ img {
 }
 .team-info {
   display: flex;
+  font-family: 'Open Sans', sans-serif;
   justify-content: center;
   padding: 20px;
 }
