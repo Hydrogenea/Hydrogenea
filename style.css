@@ -30,7 +30,12 @@ img {
   color: white;
   font-size: 20px;
 }
-
+.line-devider{
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: white;
+}
 .team-info {
   display: flex;
   justify-content: center;
