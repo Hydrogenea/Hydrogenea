@@ -1,13 +1,17 @@
 /* Styles for desktop and larger screens */
-html, body {
-	margin: 0;
+body, html {
+    margin: 0;
     padding: 0;
-  height: 100%; /* Ensure the parent elements have a height of 100% */
-	overflow: hidden;
+    height: 100%;
 }
-
-body {
-    background-image: url('your-background-image.jpg');
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the background behind the content */
+    background-image: url('background.png');
     background-size: cover; /* Cover the entire viewport */
     background-attachment: fixed; /* Fixed background */
     background-repeat: no-repeat;
@@ -114,3 +118,49 @@ p {
   margin-bottom: 10px;
 }
 
+
+/* Styles for mobile devices */
+
+@media (max-width: 767px) {
+	body {
+		background-image: url(background.png);
+		background-size: cover;
+		background-repeat: repeat;
+		width: 100%;
+		height: 250%;
+	}
+  .container {
+    height: auto;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .text-center {
+    margin-top: -100px;
+    font-size: 16px;
+  }
+
+  .team-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}
