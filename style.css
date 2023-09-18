@@ -1,14 +1,17 @@
 /* Styles for desktop and larger screens */
 html, body {
+	margin: 0;
+    padding: 0;
   height: 100%; /* Ensure the parent elements have a height of 100% */
+	overflow: hidden;
 }
 
 body {
-  background-image: url(background.png);
-  background-size: cover;
-  background-repeat: repeat;
-  width: 100%;
-  height: 250%;
+    background-image: url('your-background-image.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-attachment: fixed; /* Fixed background */
+    background-repeat: no-repeat;
+    background-position: center;
 }
 h1 {
   font-size: 34px;
