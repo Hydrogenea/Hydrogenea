@@ -31,7 +31,8 @@ p {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .line-devider-clear {
   content: "";
@@ -122,24 +123,20 @@ p {
 /* Styles for mobile devices */
 
 @media (max-width: 767px) {
-	body {
-		background-image: url(background.png);
-		background-size: cover;
-		background-repeat: repeat;
-		width: 100%;
-		height: 250%;
-	}
+
   .container {
     height: auto;
   }
-
+	.Logo img {
+		max-width: 70%;
+		max-height: 70%;
+	}
   img {
     max-width: 100%;
     max-height: 100%;
   }
 
   .text-center {
-    margin-top: 5px;
     font-size: 16px;
   }
 
@@ -147,11 +144,13 @@ p {
     flex-direction: column;
     align-items: center;
   }
-
+	.team-member {
+	
+	}
   .team-member img {
     width: 100px;
     height: 100px;
-    margin-top: 20px;
+    padding-top: 20px;
   }
 
   h1 {
