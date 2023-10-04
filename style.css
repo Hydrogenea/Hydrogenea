@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+	font-family: 'Work Sans', sans-serif;
 }
 .background {
     position: fixed;
@@ -27,13 +28,71 @@ p {
   line-height: 1.5;
 }
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+	width: 80%;
+	margin: 0 auto;
 }
+
+header {
+  
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 10px;
+  background-color: #1ACCE2;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
 .line-devider-clear {
   content: "";
   display: block;
@@ -45,6 +104,7 @@ p {
   align-items: center;
   height: 40vh;
   padding-bottom: 0px;
+  background-color: #EDF7FF
 }
 .Logo img {
 	max-width: 50%;
@@ -88,8 +148,8 @@ p {
   padding-bottom: 20px;
 }
 .core-component img {
-	max-width: 100%;
-    max-height: 100%;
+	max-width: 120%;
+    max-height: 120%;
 }
 .team-info {
   display: flex;
