@@ -180,7 +180,18 @@ nav a:hover::before {
   margin-bottom: 10px;
 }
 
-
+.Exist {
+	display: flex;
+  justify-content: right;
+  align-items: right;
+  height: 40vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.Exist img {
+	max-width: 80%;
+    max-height: 80%;
+}
 /* Styles for mobile devices */
 
 @media (max-width: 767px) {
